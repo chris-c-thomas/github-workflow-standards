@@ -1,0 +1,58 @@
+[
+  { "name": "type:feature", "color": "2F80ED", "description": "New user-facing or developer-facing capability." },
+  { "name": "type:bug", "color": "D73A4A", "description": "Incorrect behavior, regression, runtime failure, or broken expectation." },
+  { "name": "type:docs", "color": "0075CA", "description": "Documentation, guides, READMEs, examples, or comments." },
+  { "name": "type:refactor", "color": "A371F7", "description": "Internal restructuring without intended behavior change." },
+  { "name": "type:chore", "color": "6E7781", "description": "Maintenance that does not fit another type." },
+  { "name": "type:test", "color": "1A7F37", "description": "Unit, integration, e2e, fixture, or test infrastructure work." },
+  { "name": "type:ci", "color": "5319E7", "description": "CI/CD, GitHub Actions, release automation, or build pipeline work." },
+  { "name": "type:deps", "color": "0366D6", "description": "Dependency updates, lockfile changes, package manager maintenance." },
+  { "name": "type:release", "color": "0052CC", "description": "Versioning, changelog, publishing, packaging, or release preparation." },
+  { "name": "type:security", "color": "B60205", "description": "Security fix, hardening, vulnerability remediation, or auth-related control." },
+
+  { "name": "area:frontend", "color": "54A3FF", "description": "Browser UI, React, Next.js, routing, client state, or frontend behavior." },
+  { "name": "area:backend", "color": "0E8A16", "description": "Server runtime, services, workers, controllers, or server-side business logic." },
+  { "name": "area:api", "color": "1D76DB", "description": "Public or internal API contracts, OpenAPI specs, clients, schemas, or endpoints." },
+  { "name": "area:data", "color": "006B75", "description": "Data models, databases, migrations, indexing, search, ETL, or persistence." },
+  { "name": "area:infra", "color": "7057FF", "description": "Hosting, deployment, containers, networking, IaC, observability, or ops." },
+  { "name": "area:auth", "color": "BFDADC", "description": "Authentication, authorization, sessions, tokens, permissions, or identity." },
+  { "name": "area:ui", "color": "C5DEF5", "description": "Styling, design system, accessibility, layout, components, or visual polish." },
+  { "name": "area:docs", "color": "BFE5BF", "description": "Documentation site, generated docs, examples, API docs, or reference content." },
+  { "name": "area:cli", "color": "D4C5F9", "description": "CLI commands, terminal UX, command parsing, local scripts, or developer tooling." },
+  { "name": "area:ai", "color": "FBCA04", "description": "LLMs, agents, RAG, evals, prompts, MCP, embeddings, or AI integrations." },
+
+  { "name": "priority:p0", "color": "B60205", "description": "Critical; blocks production, release, security, or core usage." },
+  { "name": "priority:p1", "color": "D93F0B", "description": "High priority; important and should be addressed soon." },
+  { "name": "priority:p2", "color": "FBCA04", "description": "Normal priority; valuable but not urgent." },
+  { "name": "priority:p3", "color": "C2E0C6", "description": "Low priority; nice-to-have, cleanup, or opportunistic work." },
+
+  { "name": "size:xs", "color": "EDEDED", "description": "Trivial change; usually under 30 minutes or very small diff." },
+  { "name": "size:s", "color": "DDE7F0", "description": "Small change; narrow scope and low review complexity." },
+  { "name": "size:m", "color": "C5DEF5", "description": "Medium change; moderate scope, normal review effort." },
+  { "name": "size:l", "color": "BFDADC", "description": "Large change; broad scope, multiple files, or higher review burden." },
+  { "name": "size:xl", "color": "D4C5F9", "description": "Very large change; should likely be split before merge." },
+
+  { "name": "risk:breaking", "color": "B60205", "description": "Breaking API, schema, behavior, CLI, config, or compatibility change." },
+  { "name": "risk:migration", "color": "D93F0B", "description": "Requires migration, backfill, deployment sequencing, or manual operator action." },
+  { "name": "risk:security", "color": "B60205", "description": "Affects security posture, secrets, permissions, auth, or sensitive data." },
+  { "name": "risk:performance", "color": "FBCA04", "description": "Meaningfully affects latency, throughput, memory, bundle size, or cost." },
+  { "name": "risk:experimental", "color": "E99695", "description": "Prototype, exploratory, unstable, or intentionally subject to change." },
+
+  { "name": "release:major", "color": "B60205", "description": "Candidate for a major version bump or breaking release notes." },
+  { "name": "release:minor", "color": "0E8A16", "description": "Candidate for a minor version bump or feature release notes." },
+  { "name": "release:patch", "color": "1A7F37", "description": "Candidate for a patch release, hotfix, or bugfix release notes." },
+  { "name": "release:blocker", "color": "D93F0B", "description": "Must be resolved before the next release can ship." },
+  { "name": "release:skip-notes", "color": "EDEDED", "description": "Does not need changelog or release note coverage." },
+
+  { "name": "status:needs-triage", "color": "EDEDED", "description": "Needs initial classification, priority, owner, or reproduction details." },
+  { "name": "status:needs-info", "color": "FBCA04", "description": "Waiting on more information before the work can proceed." },
+  { "name": "status:blocked", "color": "D93F0B", "description": "Blocked by dependency, decision, access, upstream issue, or external constraint." },
+  { "name": "status:ready", "color": "0E8A16", "description": "Ready to implement or review; no known blocker." },
+  { "name": "status:wontfix", "color": "FFFFFF", "description": "Intentionally not planned or not appropriate for this repository." },
+
+  { "name": "good-first-issue", "color": "7057FF", "description": "Small, well-contained task suitable for onboarding or a low-risk contribution." },
+  { "name": "help-wanted", "color": "008672", "description": "External input, review, design feedback, or contribution would be useful." },
+  { "name": "question", "color": "D876E3", "description": "Question, clarification, investigation, or open design discussion." },
+  { "name": "duplicate", "color": "CFD3D7", "description": "Duplicate of another issue or PR." },
+  { "name": "invalid", "color": "E4E669", "description": "Not reproducible, out of scope, malformed, or not actionable." }
+]

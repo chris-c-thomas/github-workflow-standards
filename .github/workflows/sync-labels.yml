@@ -1,0 +1,64 @@
+name: Sync repository labels
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Sync mode"
+        required: true
+        default: "dry-run"
+        type: choice
+        options:
+          - dry-run
+          - upsert
+          - prune
+          - replace
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate config
+        run: npm run check
+
+      - name: Sync labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ inputs.mode }}
+          TARGET_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          args=(--repo "$TARGET_REPO")
+
+          case "$MODE" in
+            dry-run)
+              args+=(--dry-run)
+              ;;
+            upsert)
+              ;;
+            prune)
+              args+=(--prune)
+              ;;
+            replace)
+              args+=(--replace)
+              ;;
+            *)
+              echo "Unknown mode: $MODE" >&2
+              exit 1
+              ;;
+          esac
+
+          node scripts/sync-github-workflow.mjs "${args[@]}"

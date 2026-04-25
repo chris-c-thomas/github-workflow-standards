@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Status",
+    "options": [
+      { "name": "Backlog", "color": "GRAY", "description": "Captured but not ready or not scheduled." },
+      { "name": "Ready", "color": "BLUE", "description": "Clear enough to start." },
+      { "name": "In Progress", "color": "YELLOW", "description": "Actively being implemented." },
+      { "name": "In Review", "color": "PURPLE", "description": "PR is open or review is active." },
+      { "name": "Blocked", "color": "RED", "description": "Cannot move forward without resolving a blocker." },
+      { "name": "Done", "color": "GREEN", "description": "Completed, merged, closed, or intentionally resolved." },
+      { "name": "Icebox", "color": "GRAY", "description": "Valid but intentionally deferred." }
+    ]
+  },
+  {
+    "name": "Priority",
+    "options": [
+      { "name": "P0 Critical", "color": "RED", "description": "Production, security, release, or core functionality blocker." },
+      { "name": "P1 High", "color": "ORANGE", "description": "Important and should be addressed soon." },
+      { "name": "P2 Normal", "color": "YELLOW", "description": "Useful and planned but not urgent." },
+      { "name": "P3 Low", "color": "GREEN", "description": "Cleanup, nice-to-have, or opportunistic work." }
+    ]
+  },
+  {
+    "name": "Size",
+    "options": [
+      { "name": "XS", "color": "GRAY", "description": "Trivial." },
+      { "name": "S", "color": "BLUE", "description": "Small." },
+      { "name": "M", "color": "GREEN", "description": "Medium." },
+      { "name": "L", "color": "YELLOW", "description": "Large." },
+      { "name": "XL", "color": "ORANGE", "description": "Too large or should probably be split." }
+    ]
+  },
+  {
+    "name": "Risk",
+    "options": [
+      { "name": "None", "color": "GRAY", "description": "No special risk identified." },
+      { "name": "Breaking", "color": "RED", "description": "Compatibility or contract break." },
+      { "name": "Migration", "color": "ORANGE", "description": "Requires migration, backfill, or deployment sequencing." },
+      { "name": "Security", "color": "RED", "description": "Security-sensitive change." },
+      { "name": "Performance", "color": "YELLOW", "description": "Performance, scaling, cost, or bundle-size impact." },
+      { "name": "Experimental", "color": "PINK", "description": "Prototype or unstable design." }
+    ]
+  },
+  {
+    "name": "Release Impact",
+    "options": [
+      { "name": "None", "color": "GRAY", "description": "No release impact." },
+      { "name": "Patch", "color": "GREEN", "description": "Patch release or bugfix note." },
+      { "name": "Minor", "color": "BLUE", "description": "Minor release or feature note." },
+      { "name": "Major", "color": "RED", "description": "Major release or breaking change note." },
+      { "name": "Blocker", "color": "ORANGE", "description": "Blocks the next release." },
+      { "name": "Skip Notes", "color": "GRAY", "description": "Exclude from changelog/release notes." }
+    ]
+  }
+]

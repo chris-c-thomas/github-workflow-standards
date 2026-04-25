@@ -1,0 +1,26 @@
+{
+  "name": "github-workflow-standards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable GitHub issue/PR label and Projects v2 field standards with a dependency-free sync script.",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "sync-github-workflow": "./scripts/sync-github-workflow.mjs"
+  },
+  "scripts": {
+    "validate": "node scripts/sync-github-workflow.mjs --validate-only",
+    "check:script": "node --check scripts/sync-github-workflow.mjs",
+    "check": "npm run check:script && npm run validate"
+  },
+  "keywords": [
+    "github",
+    "labels",
+    "projects",
+    "workflow",
+    "triage",
+    "repository-management"
+  ]
+}
